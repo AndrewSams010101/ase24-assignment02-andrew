@@ -3,7 +3,7 @@ import java.util.regex.*;
 import java.util.*;
 // my first comment
 public class CommitMsgHook {
-
+    //my second comment
     private static final String DEFAULT_TYPE_REGEX = "(feat|fix|chore|docs|style|refactor|test|build|ci|perf)";
     private static final String CUSTOM_TYPE_REGEX = "^[a-zA-Z0-9-]+$";
     private static final String SCOPE_REGEX = "^[a-zA-Z0-9-]+$"; // Valid scope format: alphanumeric, hyphen
