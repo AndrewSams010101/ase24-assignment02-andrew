@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.regex.*;
 import java.util.*;
-
+// my first comment
 public class CommitMsgHook {
 
     private static final String DEFAULT_TYPE_REGEX = "(feat|fix|chore|docs|style|refactor|test|build|ci|perf)";
