@@ -34,3 +34,4 @@ We will consider the complexity of the specification during the grading.
 cd ./scripts
 ./commit-msg-hook-test
 ```
+# ase24-assignment02-andrew-new-02
