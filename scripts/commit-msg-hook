@@ -1,7 +1,7 @@
 #!/usr/local/bin/java --source 21
 // TODO: Update path of your Java binary if necessary
 
-public class CommitMsgHook {
+public class Main {
     public static void main(String[] args) {
         String commitMessage = args[0];
 

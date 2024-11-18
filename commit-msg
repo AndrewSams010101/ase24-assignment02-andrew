@@ -1,3 +1,8 @@
 #!/bin/sh
 
-./.git/hooks/scripts/commit-msg-hook "$(cat "$1")"
+cd ./scripts || exit
+
+javac CommitMsgHook.java
+
+#!/bin/bash
+java -cp . CommitMsgHook "$@"

@@ -23,7 +23,17 @@
 # Test cases covering (5): REQUIRED description following type and colon
 # Test case covering (14): OPTIONAL custom types
 ####################################################################################################
+# Path to the compiled CommitMsgHook Java program
+COMMIT_MSG_HOOK="java CommitMsgHook"
 
+# Test helper: Create a temporary file for the commit message
+setup() {
+  COMMIT_MSG_FILE=$(mktemp)
+}
+
+teardown() {
+  rm -f "$COMMIT_MSG_FILE"
+}
 @test "reject commit message without type" {
   run ./commit-msg-hook "add feature without type" > /dev/null 2>&1
   [ "$status" -eq 1 ]
